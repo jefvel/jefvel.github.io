@@ -94,6 +94,7 @@ h1 {
 }
 
 #header_wrap {
+    z-index:100;
     height: 100%;
     white-space: nowrap;
     text-align: center;
@@ -128,7 +129,6 @@ header h1:visited {
     text-decoration:none;
 }
 
-
 #footer_wrap {
     cursor:default;
     position:absolute;
@@ -145,7 +145,7 @@ header h1:visited {
     left:0;
     top:0;
     position:absolute;
-    height:100%;
+    height:512px;
     width:100%;
     overflow:hidden;
 }
@@ -166,13 +166,15 @@ header h1:visited {
     width:512px;
     height:512px;
     background-image:url("/images/happyface.png");
-    transform:scale(0.5, 0.5);
+    transform:scale(0.5, 0.5) translateY(5px);
     transform-origin:center bottom;
 }
 
 
 /*******************************************************************************
-Small Device Styles
+ *
+ * Small Device Styles
+ *
  *******************************************************************************/
 
 @media screen and (max-width: 3em) {
