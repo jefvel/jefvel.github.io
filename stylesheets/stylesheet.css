@@ -76,11 +76,16 @@ header h1 {
     padding:2em;
     text-align:center;
 
-    -webkit-animation:  bobble 2s ease-in-out infinite alternate,
-                        swingo 1s ease-in-out infinite alternate; /* Chrome, Safari, Opera */
+    -webkit-animation:  bobble 2s ease-in-out infinite alternate;
 
-    animation:  bobble 2s ease-in-out infinite alternate, 
-                swingo 1s ease-in-out infinite alternate; /* Standard syntax */
+    animation:  bobble 2s ease-in-out infinite alternate;
+}
+
+header h1 span {
+    -webkit-animation:swingo 1s ease-in-out infinite alternate; /* Chrome, Safari, Opera */
+
+    animation:swingo 1s ease-in-out infinite alternate; /* Standard syntax */
+
 }
 
 body {
