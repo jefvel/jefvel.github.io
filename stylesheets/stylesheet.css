@@ -202,7 +202,7 @@ header h1:visited {
     height:218px;
     width:82px;
     position:absolute;
-    left:60%;
+    left: calc(50% + 50px);
     bottom:-5px;
     overflow:hidden;
     transform-origin:center bottom;
