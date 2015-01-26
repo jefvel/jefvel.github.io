@@ -119,6 +119,10 @@ header h1 {
     color:#fff;
 }
 
+header h1:visited {
+    text-decoration:none;
+}
+
 body {
     font-family: 'Amatic SC', cursive;
     background-color:#8FB6D9;
