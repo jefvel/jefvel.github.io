@@ -45,10 +45,15 @@ table {
 
 h1 {
     font-size:2em;
-
 }
 
 /* Theme Start */
+header {
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
 body {
     font-family: 'Amatic SC', cursive;
     background-color:#8FB6D9;
