@@ -49,6 +49,8 @@ h1 {
 
 /* Theme Start */
 header h1 {
+    display:block;
+    width:auto;
     margin-left:auto;
     margin-right:auto;
 
