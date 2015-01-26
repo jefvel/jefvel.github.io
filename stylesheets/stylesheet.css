@@ -143,7 +143,7 @@ header h1:visited {
 
 #faceholder {
     left:0;
-    top:0;
+    bottom:0;
     position:absolute;
     height:512px;
     width:100%;
