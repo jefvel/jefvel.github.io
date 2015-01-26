@@ -57,13 +57,13 @@ table {
 
 
 @-webkit-keyframes swingo {
-    from {transform:rotate(-5deg);}
-    to {transform:rotate(5deg);}
+    from {transform:rotate(-5deg), scale(0.9, 0.9);}
+    to {transform:rotate(5deg), scale(0.9, 0.9);}
 }
 
 @keyframes swingo {
-    from {transform:rotate(-5deg);}
-    to {transform:rotate(5deg);}
+    from {transform:rotate(-5deg), scale(1.1, 1.1);}
+    to {transform:rotate(5deg), scale(1.1, 1.1);}
 }
 
 h1 {
