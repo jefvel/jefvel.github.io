@@ -46,13 +46,13 @@ table {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myfirst {
     from {transform:translateY(0em);}
-    to {transform:translateY(0.5em);}
+    to {transform:translateY(0.1em);}
 }
 
 /* Standard syntax */
 @keyframes myfirst {
     from {transform:translateY(0em);}
-    to {transform:translateY(0.5em);}
+    to {transform:translateY(0.1em);}
 }
 
 
