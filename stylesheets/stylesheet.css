@@ -162,10 +162,8 @@ header h1:visited {
 }
 
 #faceslider {
-    -webkit-animation:showup 5s ease-in-out 5s;/* infinite alternate; /* Chrome, Safari, Opera */
-    animation:showup 5s ease-in-out 5s;/* infinite alternate; /* Standard syntax */
-    transform:translateY(100%);
-
+    -webkit-animation:showup 5s ease-in-out 0s;/* infinite alternate; /* Chrome, Safari, Opera */
+    animation:showup 5s ease-in-out 0s;/* infinite alternate; /* Standard syntax */
 }
 
 #facewrapper {
