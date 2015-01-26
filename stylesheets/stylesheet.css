@@ -148,6 +148,7 @@ header h1:visited {
     left:0;
     bottom:0;
     overflow:hidden;
+    transform-origin:center bottom;
 }
 
 #face {
