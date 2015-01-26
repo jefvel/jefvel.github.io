@@ -97,8 +97,8 @@ body, html{
 }
 
 .swingy-hand {
-    -webkit-animation:swingo 0.7s ease 0s infinite alternate; /* Chrome, Safari, Opera */
-    animation:swingo 0.7s ease 0s infinite alternate; /* Standard syntax */
+    -webkit-animation:swingo 0.7s ease-in-out 0s infinite alternate; /* Chrome, Safari, Opera */
+    animation:swingo 0.7s ease-in-out 0s infinite alternate; /* Standard syntax */
 }
 
 /* Theme Start */
