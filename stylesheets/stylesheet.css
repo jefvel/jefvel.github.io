@@ -68,8 +68,8 @@ header h1 {
     padding:2em;
     text-align:center;
 
-    -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Chrome, Safari, Opera */
-    animation: myfirst 5s linear 2s infinite alternate; /* Standard syntax */
+    -webkit-animation: myfirst 1s ease-in-out 1s infinite alternate; /* Chrome, Safari, Opera */
+    animation: myfirst 1s ease-in-out 1s infinite alternate; /* Standard syntax */
 }
 
 body {
