@@ -194,12 +194,13 @@ header h1:visited {
 }
 
 #handwrapper {
-    height:256px;
-    width:100%;
+    height:218px;
+    width:82px;
     position:absolute;
-    left:0;
+    left:60%;
     bottom:-5px;
     overflow:hidden;
+    transform-origin:center bottom;
 }
 
 #hand {
