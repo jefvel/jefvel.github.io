@@ -1,9 +1,8 @@
 /*******************************************************************************
-Slate Theme for GitHub Pages
-by Jason Costello, @jsncostello
+ * aksel.me theme
 *******************************************************************************/
-
 @import url(pygment_trac.css);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
 
 /*******************************************************************************
 MeyerWeb Reset
@@ -42,6 +41,11 @@ ol, ul {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* Theme Start */
+body {
+    font-family: 'Amatic SC', cursive;
 }
 
 /*******************************************************************************
