@@ -141,6 +141,13 @@ header h1:visited {
     padding-bottom: 0.75em;
 }
 
+#faceholder {
+    position:absolute;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+}
+
 #facewrapper {
     width:100%;
     height:512px;
