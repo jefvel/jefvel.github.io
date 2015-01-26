@@ -134,10 +134,13 @@ header h1:visited {
     position:absolute;
     right:0;
     bottom:0;
+    padding:0;
+    margin:0;
 }
 
 #footer_wrap .inner {
     padding:1em;
+    margin:0;
 }
 
 
