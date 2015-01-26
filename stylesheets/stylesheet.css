@@ -81,11 +81,17 @@ body, html{
     animation:swingo 1s ease-in-out 0s infinite alternate; /* Standard syntax */
 }
 
+
+/* Theme Start */
+body {
+    font-family: 'Amatic SC', cursive;
+    background-color:#8FB6D9;
+    color:#FFFFFF;
+}
+
 h1 {
     font-size:3em;
 }
-
-/* Theme Start */
 
 #header_wrap {
     height: 100%;
@@ -122,12 +128,17 @@ header h1:visited {
     text-decoration:none;
 }
 
-body {
-    font-family: 'Amatic SC', cursive;
-    background-color:#8FB6D9;
-    color:#FFFFFF;
+
+#footer_wrap {
+    cursor:default;
+    position:absolute;
+    right:0;
+    bottom:0;
 }
 
+#footer_wrap .inner {
+    padding:1em;
+}
 
 
 /*******************************************************************************
