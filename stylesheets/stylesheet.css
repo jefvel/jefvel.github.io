@@ -193,6 +193,15 @@ header h1:visited {
     transform-origin:center bottom;
 }
 
+#handwrapper {
+    height:256px;
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    overflow:hidden;
+}
+
 #hand {
     margin-left:auto;
     margin-right:auto;
