@@ -114,6 +114,7 @@ h1 {
 header h1 {
     display:block;
     text-align:center;
+    text-shadow: 0px 1px black;
 }
 
 body {
