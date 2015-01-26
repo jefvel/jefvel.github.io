@@ -96,6 +96,11 @@ body, html{
     animation:swingo 2.3s ease-in 0s infinite alternate; /* Standard syntax */
 }
 
+.swingy-hand {
+    -webkit-animation:swingo 1.3s ease-out 0s infinite alternate; /* Chrome, Safari, Opera */
+    animation:swingo 1.3s ease-out 0s infinite alternate; /* Standard syntax */
+}
+
 /* Theme Start */
 body {
     font-family: 'Amatic SC', cursive;
