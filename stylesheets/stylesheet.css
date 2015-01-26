@@ -66,18 +66,6 @@ table {
     to {transform:rotate(5deg);}
 }
 
-h1 {
-    font-size:3em;
-    cursor:default;
-}
-
-/* Theme Start */
-header h1 {
-    display:block;
-    padding:2em;
-    text-align:center;
-}
-
 .bobbly {
     -webkit-animation:  bobble 2s ease-in-out 0s infinite alternate;
     animation:  bobble 2s ease-in-out 0s infinite alternate;
@@ -86,6 +74,42 @@ header h1 {
 .swingy {
     -webkit-animation:swingo 1s ease-in-out 0s infinite alternate; /* Chrome, Safari, Opera */
     animation:swingo 1s ease-in-out 0s infinite alternate; /* Standard syntax */
+}
+
+h1 {
+    font-size:3em;
+    cursor:default;
+}
+
+/* Theme Start */
+
+.header-wrap {
+    height: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.header-wrap:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    /* adjust for white space between pseudo element and next sibling */
+    margin-right: -.25em;
+    /* stretch line height */
+    height: 100%; 
+}
+
+.header-wrap .inner {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+header h1 {
+    display:block;
+    padding:2em;
+    text-align:center;
 }
 
 body {
