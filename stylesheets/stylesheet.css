@@ -92,8 +92,8 @@ body, html{
 }
 
 .swingy-slow {
-    -webkit-animation:swingo 2.3s ease-in 0s infinite alternate; /* Chrome, Safari, Opera */
-    animation:swingo 2.3s ease-in 0s infinite alternate; /* Standard syntax */
+    -webkit-animation:swingo 2.3s ease-in-out 0s infinite alternate; /* Chrome, Safari, Opera */
+    animation:swingo 2.3s ease-in-out 0s infinite alternate; /* Standard syntax */
 }
 
 .swingy-hand {
