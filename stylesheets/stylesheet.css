@@ -157,6 +157,7 @@ header h1:visited {
     height:512px;
     background-image:url("/images/happyface.png");
     transform:scale(0.5, 0.5);
+    transform-origin:center bottom;
 }
 
 
