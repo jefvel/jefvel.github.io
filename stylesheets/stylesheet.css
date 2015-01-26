@@ -76,13 +76,14 @@ header h1 {
     display:block;
     padding:2em;
     text-align:center;
+}
 
+.bobbly {
     -webkit-animation:  bobble 2s ease-in-out 0s infinite alternate;
-
     animation:  bobble 2s ease-in-out 0s infinite alternate;
 }
 
-header h1 span {
+.swingy {
     -webkit-animation:swingo 1s ease-in-out 0s infinite alternate; /* Chrome, Safari, Opera */
     animation:swingo 1s ease-in-out 0s infinite alternate; /* Standard syntax */
 }
