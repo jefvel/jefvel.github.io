@@ -83,13 +83,13 @@ h1 {
 
 /* Theme Start */
 
-#header-wrap {
+#header_wrap {
     height: 100%;
     white-space: nowrap;
     text-align: center;
 }
 
-#header-wrap:before {
+#header_wrap:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -100,7 +100,7 @@ h1 {
     height: 100%; 
 }
 
-#header-wrap .inner {
+#header_wrap .inner {
     display: inline-block;
     vertical-align: middle;
     white-space: normal;
