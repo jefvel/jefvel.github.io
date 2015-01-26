@@ -91,6 +91,10 @@ body, html{
     animation:swingo 1s ease-in-out 0s infinite alternate; /* Standard syntax */
 }
 
+.swingy-slow {
+    -webkit-animation:swingo 2s ease-in-out 0s infinite alternate; /* Chrome, Safari, Opera */
+    animation:swingo 2s ease-in-out 0s infinite alternate; /* Standard syntax */
+}
 
 /* Theme Start */
 body {
