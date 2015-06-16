@@ -59,7 +59,9 @@ function swapper(d)
 }
 
 $(document).ready(function() {
-    console.log($(".mail-link").attr("href"));
+    var to="aksel" + "kornesjo";
+    var m = "@" + "gmail." + tld_[0];
+    $(".mail-link").attr("href", "mailto:"+to+m);
 
 });
 
