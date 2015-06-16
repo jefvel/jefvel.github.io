@@ -59,7 +59,7 @@ function swapper(d)
 }
 
 $(document).ready(function() {
-    console.log($(".mail-link").href());
+    console.log($(".mail-link").attr("href"));
 
 });
 
