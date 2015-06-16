@@ -59,7 +59,6 @@ function swapper(d)
 }
 
 $(document).ready(function() {
-    mail("akselkornesjo","gmail",0,"");
     console.log($(".mail-link").href());
 
 });
