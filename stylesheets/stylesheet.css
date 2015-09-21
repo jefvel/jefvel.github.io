@@ -69,12 +69,17 @@ a {
     padding-bottom:40px;
 }
 
+#main-content p {
+    margin-bottom:5px;
+}
+
 #main-content>header {
     margin-top:15px;
     font-weight:bold;
 }
 
 #header-wrap {
+    transition:height 0.3s ease;
     height:120px;
     white-space: nowrap;
     box-sizing:border-box;
@@ -159,5 +164,14 @@ header h1:visited {
  *
  *******************************************************************************/
 
-@media screen and (max-width: 3em) {
+@media screen and (max-width: 560px) {
+    #main-content p {
+        margin-bottom:10px;
+    }
+    #header-wrap {
+        height:60px;
+    }
+    header h1 {
+        font-size:large;
+    }
 }
