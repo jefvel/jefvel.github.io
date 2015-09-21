@@ -48,77 +48,40 @@ body, html{
     height:100%;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes bobble {
-    from {transform:translateY(-0.1em);}
-    to {transform:translateY(0.1em);}
-}
-
-/* Standard syntax */
-@keyframes bobble {
-    from {transform:translateY(-0.1em);}
-    to {transform:translateY(0.1em);}
-}
-
-
-@-webkit-keyframes swingo {
-    from {transform:rotate(-5deg);}
-    to {transform:rotate(5deg);}
-}
-
-@keyframes swingo {
-    from {transform:rotate(-5deg);}
-    to {transform:rotate(5deg);}
-}
-
-@keyframes showup{
-    from {transform:translateY(100%);}
-    to {transform:translateY(0px);}
-}
-
-@-webkit-keyframes showup{
-    from {transform:translateY(100%);}
-    to {transform:translateY(0px);}
-}
-
-.bobbly {
-    -webkit-animation:  bobble 2s ease-in-out 0s infinite alternate;
-    animation:  bobble 2s ease-in-out 0s infinite alternate;
-}
-
-.swingy {
-    -webkit-animation:swingo 1s ease-in-out 0s infinite alternate; /* Chrome, Safari, Opera */
-    animation:swingo 1s ease-in-out 0s infinite alternate; /* Standard syntax */
-}
-
-.swingy-slow {
-    -webkit-animation:swingo 2.3s ease-in-out 0s infinite alternate; /* Chrome, Safari, Opera */
-    animation:swingo 2.3s ease-in-out 0s infinite alternate; /* Standard syntax */
-}
-
-.swingy-hand {
-    -webkit-animation:swingo 0.7s ease-in-out 0s infinite alternate; /* Chrome, Safari, Opera */
-    animation:swingo 0.7s ease-in-out 0s infinite alternate; /* Standard syntax */
-}
-
 /* Theme Start */
 body {
-    font-family: 'Amatic SC', cursive;
+    /*font-family: 'Amatic SC', cursive;*/
+    font-family:"archiveregular";
     background-color:#8FB6D9;
-    color:#FFFFFF;
+    color:#333333;
 }
 
 h1 {
     font-size:3em;
 }
 
-#header_wrap {
-    height: 100%;
-    white-space: nowrap;
-    text-align: center;
+a {
+    color:#333333 !important;
 }
 
-#header_wrap:before {
+#main-content {
+    padding-left:50px;
+    padding-bottom:40px;
+}
+
+#main-content>header {
+    margin-top:15px;
+    font-weight:bold;
+}
+
+#header-wrap {
+    height:120px;
+    white-space: nowrap;
+    box-sizing:border-box;
+    padding-left:30px;
+}
+
+#header-wrap:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -126,10 +89,10 @@ h1 {
     /* adjust for white space between pseudo element and next sibling */
     margin-right: -.25em;
     /* stretch line height */
-    height: 100%; 
+    height: 100%;
 }
 
-#header_wrap .inner {
+#header-wrap .inner {
     display: inline-block;
     vertical-align: middle;
     white-space: normal;
@@ -137,85 +100,57 @@ h1 {
 
 header h1 {
     display:block;
-    text-align:center;
-    text-shadow: 0px 1px black;
+    text-align:left;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.5);
     text-decoration:none;
-    color:#fff;
+    color:#eeeeee;
 }
 
 header h1:visited {
     text-decoration:none;
 }
 
-#footer_wrap {
+.text-right {
+    text-align:right;
+}
+.pull-right {
+    float:right;
+}
+.pull-left {
+    float:left;
+}
+
+#footer-wrap {
+    position:fixed;
+    left:0;
     cursor:default;
-    position:absolute;
     right:0;
     bottom:0;
 }
 
-#footer_wrap .inner {
+#footer-wrap .trees {
+    color:green;
+    line-height:0px;
+    position:relative;
+    top:1px;
+}
+
+#footer-wrap .trees>.mdi-home {
+    color:brown;
+    position:relative;
+    top:2px;
+}
+
+#footer-wrap .trees>.mdi-duck {
+    color:yellow;
+    top:1px;
+    position:relative;
+}
+
+#footer-wrap .inner {
+    background-color:snow;
     padding:1em;
     padding-bottom: 0.75em;
-}
-
-#faceholder {
-    pointer-events:none;
-    left:0;
-    bottom:0;
-    position:absolute;
-    height:256px;
-    width:100%;
-    overflow:hidden;
-}
-
-#faceslider {
-    position:absolute;
-    width:100%;
-    height:100%;
-    transform:translateY(100%);
-    -webkit-animation:showup 5s ease-in-out 0s 1 forwards;/* infinite alternate; /* Chrome, Safari, Opera */
-    animation:showup 5s ease-in-out 0s 1 forwards;/* infinite alternate; /* Standard syntax */
-}
-
-#facewrapper {
-    width:100%;
-    height:256px;
-    position:absolute;
-    left:0;
-    bottom:-5px;
-    overflow:hidden;
-    transform-origin:center bottom;
-}
-
-#face {
-    margin-left:auto;
-    margin-right:auto;
-    width:256px;
-    height:256px;
-    background-image:url("/images/happyface.png");
-    transform:scale(0.6, 0.6);
-    transform-origin:center bottom;
-}
-
-#handwrapper {
-    height:218px;
-    width:82px;
-    position:absolute;
-    left: calc(50% + 50px);
-    bottom:-5px;
-    overflow:hidden;
-    transform-origin:center bottom;
-}
-
-#hand {
-    margin-left:auto;
-    margin-right:auto;
-    width:82px;
-    height:218px;
-    background-image:url("/images/hand.png");
-    transform:scale(0.6, 0.6);
-    transform-origin:center bottom;
 }
 
 /*******************************************************************************

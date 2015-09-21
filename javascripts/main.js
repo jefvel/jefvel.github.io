@@ -62,7 +62,6 @@ $(document).ready(function() {
     var to="aksel" + "kornesjo";
     var m = "@" + "gmail." + tld_[0];
     $(".mail-link").attr("href", "mailto:"+to+m);
-
 });
 
 

@@ -1,0 +1,16 @@
+{
+  "name": "jefvel.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jefvel/jefvel.github.io",
+  "authors": [
+    "jefvel <geekku@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
