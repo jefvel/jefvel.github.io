@@ -126,18 +126,25 @@ header h1:visited {
 }
 
 #footer-wrap {
+    transition:top 0.4px ease;
     position:fixed;
     left:0;
     cursor:default;
     right:0;
+    top:100%;
     bottom:0;
 }
 
 #footer-wrap .trees {
     color:green;
-    line-height:0px;
-    position:relative;
-    top:1px;
+    line-height:20px;
+    position:absolute;
+    top:-17px;
+    width:100%;
+    border-bottom:2px solid snow;
+    text-align:right;
+    box-sizing:border-box;
+    padding-right:10px;
 }
 
 #footer-wrap .trees>.mdi-home {
@@ -154,8 +161,70 @@ header h1:visited {
 
 #footer-wrap .inner {
     background-color:snow;
+    min-height:100%;
     padding:1em;
     padding-bottom: 0.75em;
+}
+
+.footer-title {
+    margin-bottom:15px;
+}
+
+.poke-arm {
+    top:-140px;
+    left:30px;
+    box-shadow:0px 1px rgba(0, 0, 0, 0.2);
+    width:15px;
+    height:80px;
+    background-color:snow;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    position:absolute;
+    z-index:4;
+}
+
+.poke-arm .hand {
+    position:relative;
+    top:70px;
+    left:8px;
+}
+
+.poke-arm .hand .fingers{
+    content:"";
+    position:absolute;
+    display:block;
+    width:15px;
+    height:8px;
+    background-color:snow;
+    transform-origin:center left;
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.poke-arm .hand .fingers:before {
+    content:"";
+    position:absolute;
+    display:block;
+    width:16px;
+    height:8px;
+    background-color:snow;
+    transform-origin:center left;
+    transform:rotate(80deg);
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.poke-arm .hand .fingers:after{
+    content:"";
+    position:absolute;
+    display:block;
+    width:15px;
+    height:8px;
+    background-color:snow;
+    transform-origin:center left;
+    transform:rotate(150deg);
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
 }
 
 /*******************************************************************************
@@ -165,13 +234,21 @@ header h1:visited {
  *******************************************************************************/
 
 @media screen and (max-width: 560px) {
+    #main-content {
+        padding-left:20px;
+    }
     #main-content p {
         margin-bottom:10px;
     }
     #header-wrap {
         height:60px;
+        margin-bottom:-15px;
+        padding-left:20px;
     }
-    header h1 {
+    #header-wrap header h1 {
         font-size:large;
+    }
+
+    #footer-wrap.open {
     }
 }
