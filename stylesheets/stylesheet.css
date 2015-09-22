@@ -48,6 +48,23 @@ body, html{
     height:100%;
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+[layout='row'] {
+    display:flex;
+    flex-direction:row;
+}
+
+[layout='column'] {
+    display:flex;
+    flex-direction:column;
+}
+
+[flex]{
+    flex:1;
+}
+
 /* Theme Start */
 body {
     /*font-family: 'Amatic SC', cursive;*/
@@ -125,7 +142,7 @@ header h1:visited {
     float:left;
 }
 
-#footer-wrap {
+#dialog-wrap {
     transition:top 0.4px ease;
     position:fixed;
     left:0;
@@ -135,39 +152,33 @@ header h1:visited {
     bottom:0;
 }
 
-#footer-wrap .trees {
-    color:green;
-    line-height:20px;
-    position:absolute;
-    top:-17px;
-    width:100%;
-    border-bottom:2px solid snow;
-    text-align:right;
-    box-sizing:border-box;
-    padding-right:10px;
-}
-
-#footer-wrap .trees>.mdi-home {
-    color:brown;
-    position:relative;
-    top:2px;
-}
-
-#footer-wrap .trees>.mdi-duck {
-    color:yellow;
-    top:1px;
-    position:relative;
-}
-
-#footer-wrap .inner {
+#dialog-wrap .inner {
+    box-shadow:0px -3px 5px rgba(0, 0, 40, 0.05);
     background-color:snow;
-    min-height:100%;
     padding:1em;
     padding-bottom: 0.75em;
+    bottom:0;
 }
 
-.footer-title {
+#dialog-wrap .navigation-buttons {
+    margin-top:20px;
+}
+
+.navigation-buttons button {
+    background-color:snow;
+    padding:30px;
+    font-size:large;
+    border-radius:1px;
+    border:1px solid rgba(0, 0, 0, 0.5);
+    font-family:"archiveregular";
+}
+
+.dialog-title {
     margin-bottom:15px;
+}
+
+.p {
+    padding:8px !important;
 }
 
 .poke-arm {
@@ -185,6 +196,8 @@ header h1:visited {
 
 .bread-text {
     font-family:"Roboto Slab", serif;
+    max-width:30em;
+    min-height:30em;
 }
 
 .poke-arm .hand {
@@ -253,7 +266,6 @@ header h1:visited {
     #header-wrap header h1 {
         font-size:large;
     }
-
-    #footer-wrap.open {
+    #dialog-wrap.open {
     }
 }
