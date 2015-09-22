@@ -183,6 +183,10 @@ header h1:visited {
     z-index:4;
 }
 
+.bread-text {
+    font-family:"Roboto Slab", serif;
+}
+
 .poke-arm .hand {
     position:relative;
     top:70px;
