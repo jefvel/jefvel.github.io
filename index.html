@@ -13,7 +13,7 @@
         <link href="bower_components/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 
-        <base href="/" />
+        <!--<base href="/" />-->
 
         <title>aksel says hi</title>
     </head>
@@ -92,16 +92,29 @@
         </div>
 
         <!-- Cool dialog  -->
-        <div id="dialog-wrap" sliding-dialog layout="column">
-            <div class="inner" flex>
-                <div class="dialog-title">
+        <div id="dialog-wrap" sliding-dialog>
+
+            <div on-escape="closeDialog()"></div>
+
+            <div class="inner" layout="column">
+                <div class="background-thing"
+                    ng-if="currentExperience.previewImage"
+                    style="background-image:url('{{currentExperience.previewImage}}')">
+                </div>
+                <div class="background-thing"
+                    ng-if="!currentExperience.previewImage">
+                </div>
+
+                    <div class="dialog-title">
                     <span ng-bind="currentExperience.title"></span>
                     <a ui-sref="home">
                         <i class="pull-right mdi mdi-close"></i>
                     </a>
                 </div>
+
                 <section class="bread-text" flex ui-view>
                 </section>
+
                 <div class="navigation-buttons" layout="row">
                     <button ng-if="previousExperience" flex ui-sref="detail({experience:previousExperience.view})">
                         <i class="mdi mdi-chevron-left"></i>

@@ -1,8 +1,9 @@
 (function(){
     angular.module("app.directives")
-        .directive("slidingDialog", SlidingDialog);
+    .directive("slidingDialog", SlidingDialog)
+    .directive("onEscape", OnEscape);
 
-    function SlidingDialog(ExperienceService) {
+    function SlidingDialog(ExperienceService, $state) {
         var open = false;
         return {
             restrict:"A",
@@ -19,12 +20,38 @@
                 $scope.$on("OpenedExperience", function(){
                     if(!open){
                         $(element).velocity({
-                            top:120
-                        });
+                            top:-10
+                        }).velocity({top:0}, [1.6, 0.9]);
 
                         ExperienceService.bounceTitle();
                         open = true;
                     }
+                });
+
+                $scope.closeDialog = function() {
+                    $state.go("home");
+                }
+            }
+        };
+    }
+
+    function OnEscape(){
+        return {
+            restrict:"A",
+            scope: {
+                onEscape: "&"
+            },
+            link: function($scope, $element, $model){
+                $(document.body).bind("keypress keydown", function(event) {
+                    if(event.keyCode != 27) {
+                        return;
+                    }
+
+                    $scope.$apply(function() {
+                        $scope.$eval($scope.onEscape, {"event": event});
+                    });
+
+                    event.preventDefault();
                 });
             }
         };

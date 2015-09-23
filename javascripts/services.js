@@ -9,16 +9,18 @@
         var GAME = "game";
         var OTHER = "other";
 
-        var Experience = function(title, view, category) {
+        var Experience = function(title, view, category, previewimage) {
             var t = this;
             t.title = title;
             t.view = view;
             t.category = category;
+            t.previewImage = previewimage;
         }
 
         cm.experiences = [
             new Experience("Bachelor's degree at LTU - Computer Game Development (2011 - 2014)", null, WORK),
-            new Experience("Explizit (2015)", "explizit", WORK),
+            new Experience("Explizit (2015)", "explizit", WORK,
+                  "http://i.imgur.com/aIdnFzI.png" ),
             new Experience("Burngame (2014)", "burngame", GAME),
             new Experience("Drillgame (2015)", "drillgame", GAME),
             new Experience("Older Projects", "older", GAME),
@@ -51,6 +53,7 @@
             $rootScope.currentExperience = cur;
             $rootScope.nextExperience = next;
             $rootScope.previousExperience = prev;
+
             $rootScope.$broadcast("OpenedExperience");
         }
 
@@ -76,7 +79,12 @@
                 rotateZ:0
             }, 500);
 
-            $(".poke-arm").velocity("stop").velocity({translateY:90, rotateZ:4}, {duration:300, delay:1000})
+            var topt = 90;
+            if(window.innerWidth < 560){
+                topt = 73;
+            }
+
+            $(".poke-arm").velocity("stop").velocity({translateY:topt, rotateZ:4}, {duration:300, delay:1000})
                 .velocity({translateY:0, rotateZ:0}, {duration:400, delay:700});
 
             $(".poke-arm .fingers").velocity("stop").velocity({rotateZ:-5, scale:0.8}, {duration:200, delay:1300})

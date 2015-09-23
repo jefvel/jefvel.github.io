@@ -143,38 +143,66 @@ header h1:visited {
 }
 
 #dialog-wrap {
-    transition:top 0.4px ease;
+    transition:margin-top 0.4s ease;
     position:fixed;
     left:0;
     cursor:default;
     right:0;
     top:100%;
     bottom:0;
+
+    margin-top:120px;
 }
 
 #dialog-wrap .inner {
     box-shadow:0px -3px 5px rgba(0, 0, 40, 0.05);
-    background-color:snow;
-    padding:1em;
-    padding-bottom: 0.75em;
+    background-color:rgba(255, 255, 255, 0.25);
     bottom:0;
+    height:100%;
+
+}
+
+#dialog-wrap .innerinner {
+    padding:1em;
+    padding-bottom:0.75em;
 }
 
 #dialog-wrap .navigation-buttons {
     margin-top:20px;
+    padding:1em;
 }
 
 .navigation-buttons button {
-    background-color:snow;
     padding:30px;
+    background-color:snow;
     font-size:large;
-    border-radius:1px;
+    border-radius:3px;
     border:1px solid rgba(0, 0, 0, 0.5);
+    border-bottom-width:5px;
     font-family:"archiveregular";
+    position:relative;
+    transition:0.1s ease-in;
+    box-shadow:-3px 3px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.navigation-buttons button:focus {
+    outline:none;
+}
+
+.navigation-buttons button:active {
+    box-shadow:0px 0px 4px rgba(0, 0, 0, 0.01);
+    outline:none;
+    border-bottom-width:1px;
+    margin-top:4px;
+    transition:0.05s ease;
 }
 
 .dialog-title {
-    margin-bottom:15px;
+    padding:1em;
+    margin-bottom:1em;
+    background-color:snow;
+    box-shadow:0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .p {
@@ -196,8 +224,14 @@ header h1:visited {
 
 .bread-text {
     font-family:"Roboto Slab", serif;
-    max-width:30em;
-    min-height:30em;
+    max-width:33em;
+    padding:0em 1em;
+}
+
+.bread-text article {
+    background-color:White;
+    padding:1em;
+    box-shadow:0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .poke-arm .hand {
@@ -245,6 +279,16 @@ header h1:visited {
     border-top-right-radius:5px;
 }
 
+.background-thing {
+    z-index:-1;
+    opacity:1;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-position:50% 50%;
+    background-color:snow;
+}
+
 /*******************************************************************************
  *
  * Small Device Styles
@@ -265,7 +309,21 @@ header h1:visited {
     }
     #header-wrap header h1 {
         font-size:large;
+        transition: font-size 0.4s ease;
     }
-    #dialog-wrap.open {
+    .navigation-buttons button {
+        padding:10px;
+        font-size:medium;
+    }
+    #dialog-wrap {
+        margin-top:60px;
+    }
+
+    .bread-text {
+        margin:0;
+        padding:0;
+    }
+    .dialog-title {
+        margin-bottom:0;
     }
 }
