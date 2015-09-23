@@ -26,7 +26,7 @@
             new Experience("Burngame (2014)", "burngame", GAME,
                     "http://i.imgur.com/v0Gynma.png"),
             new Experience("Older Projects", "older", GAME,
-                    "http://i.imgur.com/ArQv6RI.png"),
+                    "http://i.imgur.com/nurRSBO.png"),
         ];
 
         cm.setExperience = function(key) {
