@@ -4,6 +4,7 @@
     angular.module("app.services", []);
 
     angular.module("app", [
+        "ngAnimate",
         "ui.router",
         "app.controllers",
         "app.directives",

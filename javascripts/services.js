@@ -21,9 +21,12 @@
             new Experience("Bachelor's degree at LTU - Computer Game Development (2011 - 2014)", null, WORK),
             new Experience("Explizit (2015)", "explizit", WORK,
                   "http://i.imgur.com/aIdnFzI.png" ),
-            new Experience("Burngame (2014)", "burngame", GAME),
-            new Experience("Drillgame (2015)", "drillgame", GAME),
-            new Experience("Older Projects", "older", GAME),
+            new Experience("Drillgame (2015)", "drillgame", GAME,
+                    "http://i.imgur.com/v8ys3VQ.png"),
+            new Experience("Burngame (2014)", "burngame", GAME,
+                    "http://i.imgur.com/v0Gynma.png"),
+            new Experience("Older Projects", "older", GAME,
+                    "http://i.imgur.com/bu7Fhmy.jpg"),
         ];
 
         cm.setExperience = function(key) {

@@ -224,7 +224,7 @@ header h1:visited {
 
 .bread-text {
     font-family:"Roboto Slab", serif;
-    max-width:33em;
+    max-width:35em;
     padding:0em 1em;
 }
 
@@ -326,4 +326,19 @@ header h1:visited {
     .dialog-title {
         margin-bottom:0;
     }
+}
+
+.ng-leave, .ng-enter {
+}
+
+.ng-enter .background-thing {
+    opacity:0;
+}
+
+.ng-leave.ng-active .background-thing{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
 }

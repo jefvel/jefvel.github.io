@@ -99,7 +99,7 @@
             <div class="inner" layout="column">
                 <div class="background-thing"
                     ng-if="currentExperience.previewImage"
-                    style="background-image:url('{{currentExperience.previewImage}}')">
+                    ng-style="{'background-image':'url('+currentExperience.previewImage+')'}">
                 </div>
                 <div class="background-thing"
                     ng-if="!currentExperience.previewImage">
@@ -116,22 +116,30 @@
                 </section>
 
                 <div class="navigation-buttons" layout="row">
-                    <button ng-if="previousExperience" flex ui-sref="detail({experience:previousExperience.view})">
-                        <i class="mdi mdi-chevron-left"></i>
-                        {{ previousExperience.title }}
+                    <button flex ng-disabled="!previousExperience"
+                        ui-sref="detail({experience:previousExperience.view})">
+                        <span ng-if="previousExperience">
+                            <i class="mdi mdi-chevron-left"></i>
+                            {{ previousExperience.title }}
+                        </span>
+                        <span ng-if="!previousExperience">
+                            no newer things
+                            <i class="mdi mdi-close"></i>
+                        </span>
                     </button>
-                    <button ng-if="!previousExperience" flex ui-sref="home">
-                        no newer things
-                        <i class="mdi mdi-close"></i>
-                    </button>
+
                     <span class="p"></span>
-                    <button ng-if="nextExperience" flex ui-sref="detail({experience:nextExperience.view})">
-                        {{ nextExperience.title }}
-                        <i class="mdi mdi-chevron-right"></i>
-                    </button>
-                    <button ng-if="!nextExperience" flex ui-sref="home">
-                        reached end
-                        <i class="mdi mdi-close"></i>
+
+                    <button flex ui-sref="detail({experience:nextExperience.view})"
+                        ng-disabled="!nextExperience">
+                        <span ng-if="nextExperience">
+                            {{ nextExperience.title }}
+                            <i class="mdi mdi-chevron-right"></i>
+                        </span>
+                        <span ng-if="!nextExperience">
+                            reached end
+                            <i class="mdi mdi-close"></i>
+                        </span>
                     </button>
                 </div>
             </div>
@@ -139,6 +147,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular-animate.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
         <script src="javascripts/app.js" type="text/javascript"></script>
