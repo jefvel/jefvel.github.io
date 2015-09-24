@@ -67,6 +67,19 @@
                 </div>
 
                 <header>
+                    Other:
+                </header>
+                <div ng-cloak>
+                    <p ng-repeat="experience in home.experiences" ng-if="experience.category=='other'">
+                        <span ng-if="experience.view == null" ng-bind="experience.title"></span>
+                        <span ng-if="experience.view">
+                            <a ui-sref="detail({ experience:experience.view })" ng-bind="experience.title"></a>
+                            <i class="mdi mdi-chevron-right"></i>
+                        </span>
+                    </p>
+                </div>
+
+                <header>
                     Contact:
                 </header>
                 <p>
