@@ -20,7 +20,7 @@
         cm.experiences = [
             new Experience("Bachelor's degree at LTU - Computer Game Development (2011 - 2014)", null, WORK),
             new Experience("Explizit (2015)", "explizit", WORK,
-                  "http://i.imgur.com/I3tOasb.png" ),
+                  "http://i.imgur.com/CKNumqt.png" ),
             new Experience("Drillgame (2015)", "drillgame", GAME,
                     "http://i.imgur.com/v8ys3VQ.png"),
             new Experience("Burngame (2014)", "burngame", GAME,
