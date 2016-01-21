@@ -235,7 +235,7 @@ header h1:visited {
 }
 
 .bread-text a {
-    color:white;
+    color:white !important;
 }
 
 .poke-arm .hand {
