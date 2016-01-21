@@ -69,8 +69,8 @@ body, html{
 body {
     /*font-family: 'Amatic SC', cursive;*/
     font-family:"archiveregular";
-    background-color:#8FB6D9;
     color:#333333;
+    background-color:#FEFEFE;
 }
 
 h1 {
@@ -123,9 +123,8 @@ a {
 header h1 {
     display:block;
     text-align:left;
-    text-shadow: 0px 1px rgba(0, 0, 0, 0.5);
     text-decoration:none;
-    color:#eeeeee;
+    color:#8BC34A;
 }
 
 header h1:visited {
