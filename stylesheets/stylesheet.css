@@ -228,7 +228,8 @@ header h1:visited {
 }
 
 .bread-text article {
-    background-color:White;
+    background-color:#424242;
+    color:white;
     padding:1em;
     box-shadow:0px 3px 6px rgba(0, 0, 0, 0.2);
 }
