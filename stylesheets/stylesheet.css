@@ -155,7 +155,7 @@ header h1:visited {
 
 #dialog-wrap .inner {
     box-shadow:0px -3px 5px rgba(0, 0, 40, 0.05);
-    background-color:rgba(255, 255, 255, 0.25);
+    /*background-color:rgba(255, 255, 255, 0.25);*/
     bottom:0;
     height:100%;
 
