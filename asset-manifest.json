@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/jefvel.github.io/static/css/main.54a3f16c.chunk.css",
+    "main.js": "/jefvel.github.io/static/js/main.0db5de2c.chunk.js",
+    "main.js.map": "/jefvel.github.io/static/js/main.0db5de2c.chunk.js.map",
+    "runtime-main.js": "/jefvel.github.io/static/js/runtime-main.56a130d5.js",
+    "runtime-main.js.map": "/jefvel.github.io/static/js/runtime-main.56a130d5.js.map",
+    "static/js/2.27c26303.chunk.js": "/jefvel.github.io/static/js/2.27c26303.chunk.js",
+    "static/js/2.27c26303.chunk.js.map": "/jefvel.github.io/static/js/2.27c26303.chunk.js.map",
+    "index.html": "/jefvel.github.io/index.html",
+    "precache-manifest.410cab359ecbd07926ea879c266afc1d.js": "/jefvel.github.io/precache-manifest.410cab359ecbd07926ea879c266afc1d.js",
+    "service-worker.js": "/jefvel.github.io/service-worker.js",
+    "static/css/main.54a3f16c.chunk.css.map": "/jefvel.github.io/static/css/main.54a3f16c.chunk.css.map",
+    "static/js/2.27c26303.chunk.js.LICENSE.txt": "/jefvel.github.io/static/js/2.27c26303.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/jefvel.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.56a130d5.js",
+    "static/js/2.27c26303.chunk.js",
+    "static/css/main.54a3f16c.chunk.css",
+    "static/js/main.0db5de2c.chunk.js"
+  ]
+}
